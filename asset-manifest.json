@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/folio/static/css/main.073c9b0a.css",
+    "main.js": "/folio/static/js/main.3aa331f7.js",
+    "index.html": "/folio/index.html",
+    "main.073c9b0a.css.map": "/folio/static/css/main.073c9b0a.css.map",
+    "main.3aa331f7.js.map": "/folio/static/js/main.3aa331f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.3aa331f7.js"
+  ]
+}
