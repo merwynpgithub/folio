@@ -37,3 +37,21 @@
 .c-desc {
   font-weight: 200;
 }
+form {
+  margin-top: 20px;
+}
+input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0;
+  font-size: 14px;
+  padding-left: 10px;
+}
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 14px;
+  padding-left: 10px;
+}

@@ -24,8 +24,14 @@ function Contact() {
         </div>
         <div className="c-right">
           <p className="c-desc">
-            <strong>What's your story</strong> Get in touch. Ready to be hired as a developer and willing to relocate
+            <strong>What's your story?</strong> Get in touch. Ready to be hired as a developer and willing to relocate
           </p>
+          <form action="https://formsubmit.co/merwynpatrick@gmail.com" method="POST" target="_blank">
+            <input type="text" name="name" class="form-control" placeholder="Full Name" required />
+            <input type="email" name="email" class="form-control" placeholder="Email Address" required />
+            <textarea placeholder="Your Message" class="form-control" name="message" rows="5" required></textarea>
+            <button type="submit" class="btn">Submit Form</button>
+          </form>
         </div>
       </div>
     </div>
