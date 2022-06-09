@@ -1,6 +1,26 @@
 import './styles/contact.css';
 
 function Contact() {
+  const handleSubmit = e => {
+    e.preventDefault();
+    const url = "https://formsubmit.co/merwynpatrick@gmail.com";
+    const name = document.getElementsByClassName("form-control")[0].value;
+    const email = document.getElementsByClassName("form-control")[1].value;
+    const message = document.getElementsByClassName("form-control")[2].value;
+    const contactData = { name, email, message };
+    fetch(url, {
+      method: "post",
+      body: JSON.stringify(contactData)
+    })
+    .then(res => {
+      console.log(res);
+      document.getElementsByClassName("form-control")[0].value = "";
+      document.getElementsByClassName("form-control")[1].value = "";
+      document.getElementsByClassName("form-control")[2].value = "";
+      alert("Your message was sent. Thanks for contacting");
+    })
+    .catch(err => console.log(err));
+  };
   return (
     <div className="c">
       <div className="c-bg"></div>
