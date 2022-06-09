@@ -10,7 +10,7 @@ function Main() {
           <h1 className="main-name">Merwyn Patrick</h1>
           <div className="main-title">
             <div className="title-wrapper">
-            <div className="title-item">Developer</div>
+            <div className="title-item">Full Stack Developer</div>
             <div className="title-item">Mechanical Engineer</div>
             <div className="title-item">Stock Trader</div>
             </div>
