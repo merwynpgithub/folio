@@ -2,7 +2,7 @@ import './styles/folio.css';
 
 function Folio() {
   return (
-    <div>project</div>
+    <div className="f">project</div>
   );
 }
 
