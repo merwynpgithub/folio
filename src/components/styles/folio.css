@@ -27,4 +27,21 @@
   height: 40vh;
   margin: 20px 10px;
   border: 2px solid rgb(243, 242, 242);
+  border-radius: 10px 10px 0 0;
+}
+.f-browse {
+  height: 20px;
+  background-color: rgb(243, 242, 242);
+  display: flex;
+  align-items: center;
+}
+.f-circle {
+  width: 6px;
+  min-height: 6px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 3px;
+}
+.f-img {
+  width: 100%;
 }

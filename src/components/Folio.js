@@ -1,8 +1,18 @@
 import './styles/folio.css';
 
-function Folio() {
+
+function Folio({link, id, img}) {
   return (
-    <div className="f">project</div>
+    <div className="f">
+      <div className="f-browse">
+        <div className="f-circle"></div>
+        <div className="f-circle"></div>
+        <div className="f-circle"></div>
+      </div>
+      <a href={link} target="_blank">
+        <img src={img} alt="scheduler" className="f-img"></img>
+      </a>
+    </div>
   );
 }
 
