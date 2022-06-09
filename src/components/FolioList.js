@@ -2,8 +2,6 @@ import Folio from './Folio';
 import './styles/folio.css';
 import data from '../data';
 
-import scheduler from '../images/ezgif-1-scheduler.gif';
-
 function FolioList() {
   return (
     <>
@@ -14,7 +12,7 @@ function FolioList() {
       <div className="fl-list">
         {data.map(data => {
           return (
-            <Folio link={data.link} id={data.id} img={scheduler} />
+            <Folio link={data.link} id={data.id} img={data.img} />
           );
         })}
       </div>
