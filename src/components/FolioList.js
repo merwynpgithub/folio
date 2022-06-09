@@ -12,7 +12,7 @@ function FolioList() {
       <div className="fl-list">
         {data.map(data => {
           return (
-            <Folio link={data.link} id={data.id} img={data.img} />
+            <Folio link={data.link} key={data.id} img={data.img} />
           );
         })}
       </div>

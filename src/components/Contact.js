@@ -1,25 +1,23 @@
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './styles/contact.css';
 
 function Contact() {
+  const form = useRef();
+  const [done, setDone] = useState(false)
   const handleSubmit = e => {
     e.preventDefault();
-    const url = "https://formsubmit.co/merwynpatrick@gmail.com";
-    const name = document.getElementsByClassName("form-control")[0].value;
-    const email = document.getElementsByClassName("form-control")[1].value;
-    const message = document.getElementsByClassName("form-control")[2].value;
-    const contactData = { name, email, message };
-    fetch(url, {
-      method: "post",
-      body: JSON.stringify(contactData)
-    })
-    .then(res => {
-      console.log(res);
-      document.getElementsByClassName("form-control")[0].value = "";
-      document.getElementsByClassName("form-control")[1].value = "";
-      document.getElementsByClassName("form-control")[2].value = "";
-      alert("Your message was sent. Thanks for contacting");
-    })
-    .catch(err => console.log(err));
+    emailjs.sendForm('service_6qz1vjm', 'template_gxli3yn', form.current, 'BU6X7yeHVO8n7shuT')
+      .then((result) => {
+          console.log(result.text);
+          setDone(true);
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("subject").value = "";
+          document.getElementById("message").value = "";
+      }, (error) => {
+          console.log(error.text);
+      });
   };
   return (
     <div className="c">
@@ -46,11 +44,13 @@ function Contact() {
           <p className="c-desc">
             <strong>What's your story?</strong> Get in touch. Ready to be hired as a developer and willing to relocate
           </p>
-          <form action="https://formsubmit.co/merwynpatrick@gmail.com" method="POST" target="_blank">
-            <input type="text" name="name" class="form-control" placeholder="Full Name" required />
-            <input type="email" name="email" class="form-control" placeholder="Email Address" required />
-            <textarea placeholder="Your Message" class="form-control" name="message" rows="5" required></textarea>
-            <button type="submit" class="btn">Submit Form</button>
+          <form ref={form} onSubmit={handleSubmit}>
+            <input type="text" name="name" placeholder="Full Name" id="name" required />
+            <input type="email" name="email" placeholder="Email Address" id="email" required />
+            <input type="subject" name="subject" placeholder="Subject" id="subject" required />
+            <textarea placeholder="Your Message" name="message" rows="5" id="message" required></textarea>
+            <button type="submit">Submit Form</button>
+            {done && <p>Thanks for contacting.</p>}
           </form>
         </div>
       </div>
