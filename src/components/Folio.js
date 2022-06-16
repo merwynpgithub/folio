@@ -1,7 +1,7 @@
 import './styles/folio.css';
 
 
-function Folio({link, id, img}) {
+function Folio({link, id, img, name}) {
   return (
     <div className="f">
       <div className="f-browse">
@@ -12,6 +12,9 @@ function Folio({link, id, img}) {
       <a href={link} target="_blank">
         <img src={img} alt="scheduler" className="f-img"></img>
       </a>
+      <div className="f-name">
+        <div>{name}</div>  
+      </div>
     </div>
   );
 }

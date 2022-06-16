@@ -23,6 +23,7 @@
   justify-content: space-between;
 }
 .f {
+  position: relative;
   width: 30%;
   height: 40vh;
   margin: 20px 10px;
@@ -31,7 +32,7 @@
   overflow-y: hidden;
 }
 .f-browse {
-  height: 20px;
+  height: 30px;
   background-color: rgb(243, 242, 242);
   display: flex;
   align-items: center;
@@ -51,6 +52,16 @@
 }
 .f:hover .f-img {
   transform: translateY(-100%);
+}
+.f-name {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+.f-name div {
+  text-align: center;
+  color: #59b256;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 480px) {
