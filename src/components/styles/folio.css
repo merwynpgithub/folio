@@ -60,8 +60,11 @@
 }
 .f-name div {
   text-align: center;
-  color: #59b256;
   font-weight: 700;
+}
+.f-name a {
+  text-decoration: none;
+  color: #59b256;;
 }
 
 @media screen and (max-width: 480px) {

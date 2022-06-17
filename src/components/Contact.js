@@ -24,7 +24,7 @@ function Contact() {
       <div className="c-bg"></div>
       <div className="c-wrap">
         <div className="c-left">
-          <h1 className="c-title">Let's discuss the Job</h1>
+          <h1 className="c-title">Let's discuss the Job.</h1>
           <div className="c-info">
             <div className="c-info-item">
               <img src="https://pngimg.com/uploads/phone/phone_PNG48996.png" alt="phone" className="c-icon" />
@@ -42,7 +42,7 @@ function Contact() {
         </div>
         <div className="c-right">
           <p className="c-desc">
-            <strong>Contact me. </strong> Get in touch. Ready to be hired as a developer and willing to relocate
+            <strong>Contact me. </strong> Ready to be hired as a developer and willing to relocate.
           </p>
           <form ref={form} onSubmit={handleSubmit}>
             <input type="text" name="name" placeholder="Full Name" id="name" required />

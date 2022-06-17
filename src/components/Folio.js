@@ -13,7 +13,7 @@ function Folio({link, id, img, name}) {
         <img src={img} alt="scheduler" className="f-img"></img>
       </a>
       <div className="f-name">
-        <div>{name}</div>  
+        <div><a href={link} target="_blank">{name}</a></div>  
       </div>
     </div>
   );

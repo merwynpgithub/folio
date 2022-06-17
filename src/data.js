@@ -20,12 +20,6 @@ const data = [
   link: "https://github.com/merwynpgithub/stockaster",
   img: stscanner,
   name: "Stock Scanner"
-},
-{
-  id: 4,
-  link: "https://interview-scheduler-884853.netlify.app/",
-  img: scheduler,
-  name: "Sscheduler"
 }
 ];
 
