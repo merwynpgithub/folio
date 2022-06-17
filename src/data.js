@@ -1,4 +1,4 @@
-import scheduler from './images/ezgif-1-scheduler.gif';
+import scheduler from './images/scheduler.png';
 import autolib from './images/autolib.png';
 import stscanner from './images/stock-scanner.png';
 
