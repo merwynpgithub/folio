@@ -42,15 +42,15 @@
 
 .title-wrapper {
   height: 100%;
-  animation: move 10s ease-in-out infinite alternate;
+  animation: move 5s ease-in infinite alternate;
 }
 
 @keyframes move {
   50% {
-    transform: translateY(-50px);
+    transform: translateY(-25px);
   }
   100% {
-    transform: translateY(-100px);
+    transform: translateY(-50px);
   }
 }
 

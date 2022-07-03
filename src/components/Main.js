@@ -12,11 +12,13 @@ function Main() {
             <div className="title-wrapper">
             <div className="title-item">Full Stack Developer</div>
             <div className="title-item">Mechanical Engineer</div>
-            <div className="title-item">Stock Trader</div>
             </div>
           </div>
           <div className="desc">
-            I develop web applications using the PERN stack (PostgreSQL, Express, React and Node.js). I am looking to transition my career to Web development full time.
+            I develop web applications using the PERN stack (PostgreSQL, Express, React and Node.js). I am looking to transition my career to Web development full time. I am currently learning AWS, Python and TypeScript.
+          </div>
+          <div className="desc">
+            I like the stock market and have a passion for trading and investing. Before transitioning to Web Development, I was an Auto Design Engineer and I designed some of the parts in the Acura RDX 2018-2020 models.
           </div>
         </div>
       </div>
